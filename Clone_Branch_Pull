@@ -1,1 +1,49 @@
+# Steps I took in Week 1 to get started on my project. 
 
+# Part 1: clone the repository to local computer
+
+# 1. Copy the HTTPS (clone) link from the repository's page in GitHub 
+    (found under the green "<> code" button on the top right corner)
+# 2. Open VSCode and Start a new terminal
+# 3. cd to the location on your computer you would like to store the project on your local computer
+# 4. paste this into the terminal: 
+
+git clone [paste repo HTTPS url]
+
+
+# Part 2: create a new branch in the project
+
+# 5. cd into the project (just added to your local device)
+# 6a. create a new branch (give it a descriptive name) and go into the branch to start doing work in there 
+            --> paste this code into the terminal: 
+
+git branch New_Branch_Name
+git checkout New_Branch_Name
+
+# 6b. alternatively, you can create a new branch and go into it all in one step with: git checkout -b New_Branch_Name
+
+#7. double check that you are working in the new branch --> paste this code into the terminal: 
+
+git branch
+
+(The output should list all branches, with a * next to the currently active branch)
+
+# 8. start working on your project as usual, and all the changes will be saved under your branch history
+
+# Part 3: save changes back to remote repo
+
+# 9. when you are doing working, save your changes back to the remote repo 
+          --> paste this code into the terminal: 
+
+git add .
+git commit -m "[commit message]"
+git push -u origin Branch_Name (OR git push --set-upstream origin Branch_Name)
+
+
+# Part 4: create a pull request to have the branch changes merged back into the main branch
+
+# 10. create a new pull request for your branch in GitHub; excellent dirrections here: 
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request
+
+# 11. assign the pull request to a specific person for review; excellent directions here:
+https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
