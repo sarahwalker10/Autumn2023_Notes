@@ -1,0 +1,5 @@
+Debugging method:
+Import pdb
+Pdb.set_trace()
+
+Tqdm - machine learning, progress bar
